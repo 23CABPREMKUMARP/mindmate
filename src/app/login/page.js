@@ -107,7 +107,7 @@ export default function LoginPage() {
                     <ShieldCheck className="text-white w-8 h-8 relative z-10" />
                 </div>
                 <h1 className="text-3xl font-black tracking-tighter text-white uppercase italic drop-shadow-[0_0_10px_rgba(255,255,255,0.3)]">
-                    NEUROCORE <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#00f3ff] to-blue-400 not-italic drop-shadow-[0_0_5px_#00f3ff]">SECURE</span>
+                    MINDMATE <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#00f3ff] to-blue-400 not-italic drop-shadow-[0_0_5px_#00f3ff]">SECURE</span>
                 </h1>
             </div>
 

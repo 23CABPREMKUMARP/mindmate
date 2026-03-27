@@ -142,7 +142,7 @@ export default function Home() {
         >
           <div className="absolute inset-0 blur-[60px] md:blur-[100px] bg-transparent bg-gradient-to-r from-[#00f3ff] to-[#bc13fe] opacity-30 animate-pulse rounded-full"></div>
           <h1 className="text-5xl md:text-9xl font-black mb-8 tracking-tighter text-transparent bg-clip-text bg-gradient-to-b from-white to-gray-500 drop-shadow-[0_0_20px_rgba(255,255,255,0.3)] md:drop-shadow-[0_0_35px_rgba(255,255,255,0.4)] relative z-10 transition-all duration-700">
-            NeuroCore System
+            MindMate AI System
           </h1>
         </motion.div>
 
