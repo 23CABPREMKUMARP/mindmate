@@ -55,17 +55,18 @@ body {
   -moz-osx-font-smoothing: grayscale;
   letter-spacing: 0.01em;
   /* Cyberpunk deep gradient */
-  background: radial-gradient(circle at 50% 0%, #150030 0%, #02000f 100%);
-  background-attachment: fixed;
+  background: #02000f;
+  background-attachment: scroll; /* Attachment fixed is expensive on mobile */
 }
 
 /* --- Glassmorphism Cards - Optimized for Low-End --- */
 .glass-panel {
   background: var(--glass-bg);
-  backdrop-filter: blur(4px); /* Massive GPU gain: reduced from 16px */
-  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(2px); /* Final reduction for max performance */
+  -webkit-backdrop-filter: blur(2px);
   border: 1px solid var(--glass-border);
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  will-change: transform, opacity; /* Force GPU layer promotion */
 }
 
 .glass-panel:hover {
@@ -79,9 +80,9 @@ body {
 }
 
 @keyframes rgb-glow-anim {
-  0% { filter: drop-shadow(0 0 5px var(--primary-neon)); }
-  50% { filter: drop-shadow(0 0 5px var(--secondary-neon)); }
-  100% { filter: drop-shadow(0 0 5px var(--primary-neon)); }
+  0% { opacity: 0.8; }
+  50% { opacity: 1; }
+  100% { opacity: 0.8; }
 }
 
 .rgb-border {
@@ -95,9 +96,8 @@ body {
 }
 
 @keyframes rgb-gradient-spin {
-  0% { background-position: 0% 0%, 0% 50%; }
-  50% { background-position: 0% 0%, 100% 50%; }
-  100% { background-position: 0% 0%, 0% 50%; }
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
 }
 
 .rgb-text {
