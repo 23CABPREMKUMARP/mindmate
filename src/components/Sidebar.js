@@ -59,7 +59,7 @@ export default function Sidebar() {
             <ScanFace className="text-[#00f3ff] w-6 h-6 animate-pulse" />
           </div>
           <h1 className="text-xl font-black tracking-tighter text-white uppercase italic">
-            EMOAI <span className="text-[#00f3ff]">PRO</span>
+            MindMate <span className="text-[#00f3ff]">AI</span>
           </h1>
         </div>
 

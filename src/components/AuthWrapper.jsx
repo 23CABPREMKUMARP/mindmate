@@ -10,7 +10,7 @@ export default function AuthWrapper({ children }) {
   useEffect(() => {
     // Add small delay to ensure router is ready
     const timer = setTimeout(() => {
-      const user = localStorage.getItem('emoai_user');
+      const user = localStorage.getItem('mindmate_user');
       const isLoginPage = ['/login', '/register', '/face-login', '/register-face'].includes(pathname);
 
       if (!user && !isLoginPage) {

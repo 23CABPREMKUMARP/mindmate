@@ -20,7 +20,7 @@ export default function LoginPage() {
   const router = useRouter();
 
   useEffect(() => {
-    const user = localStorage.getItem('emoai_user');
+    const user = localStorage.getItem('mindmate_user');
     if (user) {
         router.push('/');
     }
@@ -49,7 +49,7 @@ export default function LoginPage() {
       if (json.success) {
           setStatus(t('common.success'));
           setIsSuccess(true);
-          localStorage.setItem('emoai_user', JSON.stringify(json.user));
+          localStorage.setItem('mindmate_user', JSON.stringify(json.user));
           setTimeout(() => router.push('/'), 1500);
       } else {
           setStatus(t('common.error'));
@@ -75,7 +75,7 @@ export default function LoginPage() {
       if (json.match) {
         setStatus(`${t('common.success')}, ${json.match.name}`);
         setIsSuccess(true);
-        localStorage.setItem('emoai_user', JSON.stringify(json.match));
+        localStorage.setItem('mindmate_user', JSON.stringify(json.match));
         setTimeout(() => router.push('/'), 1500);
       } else {
         setStatus(json.message || t('common.error'));

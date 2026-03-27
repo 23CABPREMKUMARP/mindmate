@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "EMOAI PRO • Neural Mental Health Interface",
+  title: "MindMate AI • Neural Mental Health Interface",
   description: "Advanced biometric emotional diagnostics and AI-driven cognitive support.",
 };
 

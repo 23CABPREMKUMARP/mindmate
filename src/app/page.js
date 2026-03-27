@@ -64,7 +64,7 @@ export default function Home() {
   const [user, setUser] = useState(null);
 
   useEffect(() => {
-    const savedUser = localStorage.getItem('emoai_user');
+    const savedUser = localStorage.getItem('mindmate_user');
     if (!savedUser) {
       router.push('/login');
     } else {
@@ -73,7 +73,7 @@ export default function Home() {
   }, [router]);
 
   const handleLogout = () => {
-    localStorage.removeItem('emoai_user');
+    localStorage.removeItem('mindmate_user');
     router.push('/login');
   };
 
@@ -93,7 +93,7 @@ export default function Home() {
                 <BrainCircuit className="text-white w-6 h-6 animate-pulse" />
             </div>
             <h1 className="text-2xl font-black tracking-tighter text-white drop-shadow-[0_0_10px_rgba(255,255,255,0.3)] rgb-text">
-              EMOAI PRO
+              MindMate AI
             </h1>
         </motion.div>
         

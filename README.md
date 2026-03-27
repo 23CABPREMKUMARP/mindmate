@@ -1,6 +1,6 @@
-# 🧠 AI Mental Health Support Assistant
+# 🧠 MindMate AI • Mental Health Support Assistant
 
-A completely free-tier optimized AI Mental Health Assistant built with Next.js 14, Tailwind CSS, Supabase, and Hugging Face. This project is optimized for deployment on Vercel and designed for hackathons!
+A completely free-tier optimized MindMate AI building with Next.js 14, Tailwind CSS, Supabase, and Hugging Face. This project is optimized for deployment on Vercel and designed for hackathons!
 
 ## 🌟 Features
 
