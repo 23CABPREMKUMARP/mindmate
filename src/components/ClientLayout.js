@@ -3,7 +3,6 @@ import { useState, useEffect, useRef } from 'react';
 import { usePathname } from "next/navigation";
 import Sidebar from "@/components/Sidebar";
 import AnimatedBackground from "@/components/AnimatedBackground";
-import ThreeBackground from "@/components/ThreeBackground";
 import '@/lib/i18n';
 
 export default function ClientLayout({ children }) {
@@ -30,7 +29,6 @@ export default function ClientLayout({ children }) {
     <>
       {mounted && pathname !== '/emotion' && pathname !== '/mood-booster' && (
         <>
-          <ThreeBackground />
           <AnimatedBackground />
         </>
       )}

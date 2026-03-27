@@ -2,9 +2,12 @@
 import React, { useState, useRef, useEffect, useCallback } from 'react';
 import { Send, Mic, MicOff, AlertTriangle, User, Activity, Sparkles, BrainCircuit, ShieldCheck } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
+import '@/lib/i18n';
 import SuggestionsPanel from '@/components/SuggestionsPanel';
 
 export default function GeminiChatPage() {
+  const { t, i18n } = useTranslation();
   const [messages, setMessages] = useState([]);
   const [input, setInput] = useState("");
   const [isLoading, setIsLoading] = useState(false);
@@ -16,6 +19,16 @@ export default function GeminiChatPage() {
   const scrollRef = useRef(null);
   const recognitionRef = useRef(null);
 
+  // Map i18n codes to Speech API codes
+  const langMap = {
+    'en': 'en-US',
+    'ta': 'ta-IN',
+    'hi': 'hi-IN',
+    'ml': 'ml-IN',
+    'te': 'te-IN',
+    'kn': 'kn-IN'
+  };
+
   // Initialize Web Speech API
   useEffect(() => {
     if (typeof window !== 'undefined' && ('webkitSpeechRecognition' in window || 'SpeechRecognition' in window)) {
@@ -23,7 +36,7 @@ export default function GeminiChatPage() {
       recognitionRef.current = new SpeechRecognition();
       recognitionRef.current.continuous = true;
       recognitionRef.current.interimResults = true;
-      recognitionRef.current.lang = 'en-US';
+      recognitionRef.current.lang = langMap[i18n.language] || 'en-US';
 
       recognitionRef.current.onresult = (event) => {
         let interimTranscript = '';
@@ -65,17 +78,23 @@ export default function GeminiChatPage() {
     window.speechSynthesis.cancel();
     
     const utterance = new SpeechSynthesisUtterance(text);
+    utterance.lang = langMap[i18n.language] || 'en-US';
     utterance.rate = 1.0;
     utterance.pitch = 1.1; // Slightly futuristic pitch
     utterance.volume = 1.0;
     
-    // Select a pleasant voice if available
+    // Select a pleasant voice if available matching language
     const voices = window.speechSynthesis.getVoices();
-    const premiumVoice = voices.find(v => v.name.includes('Google') || v.name.includes('Premium')) || voices[0];
-    if (premiumVoice) utterance.voice = premiumVoice;
+    const targetedLang = langMap[i18n.language] || 'en-US';
+    const voice = voices.find(v => v.lang === targetedLang && (v.name.includes('Google') || v.name.includes('Premium'))) || 
+                  voices.find(v => v.lang === targetedLang) ||
+                  voices.find(v => v.name.includes('Google') || v.name.includes('Premium')) || 
+                  voices[0];
+                  
+    if (voice) utterance.voice = voice;
 
     window.speechSynthesis.speak(utterance);
-  }, [isVoiceEnabled]);
+  }, [isVoiceEnabled, i18n.language]);
 
   // Clean up speech on unmount
   useEffect(() => {
