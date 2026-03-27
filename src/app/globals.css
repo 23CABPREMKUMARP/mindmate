@@ -59,13 +59,13 @@ body {
   background-attachment: fixed;
 }
 
-/* --- Glassmorphism Cards --- */
+/* --- Glassmorphism Cards - Optimized for Low-End --- */
 .glass-panel {
   background: var(--glass-bg);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
+  backdrop-filter: blur(4px); /* Massive GPU gain: reduced from 16px */
+  -webkit-backdrop-filter: blur(4px);
   border: 1px solid var(--glass-border);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
 .glass-panel:hover {
@@ -79,10 +79,9 @@ body {
 }
 
 @keyframes rgb-glow-anim {
-  0% { filter: drop-shadow(0 0 10px var(--primary-neon)); }
-  33% { filter: drop-shadow(0 0 10px var(--secondary-neon)); }
-  66% { filter: drop-shadow(0 0 10px var(--rgb-1)); }
-  100% { filter: drop-shadow(0 0 10px var(--primary-neon)); }
+  0% { filter: drop-shadow(0 0 5px var(--primary-neon)); }
+  50% { filter: drop-shadow(0 0 5px var(--secondary-neon)); }
+  100% { filter: drop-shadow(0 0 5px var(--primary-neon)); }
 }
 
 .rgb-border {

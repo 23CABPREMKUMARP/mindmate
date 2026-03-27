@@ -142,7 +142,7 @@ export default function ChatPage() {
               key={i} 
               initial={{ opacity: 0, y: 10, scale: 0.95 }}
               animate={{ opacity: 1, y: 0, scale: 1 }}
-              transition={{ type: "spring", stiffness: 200, damping: 20 }}
+              transition={{ duration: 0.3, ease: "easeOut" }}
               className={`flex items-end gap-3 ${m.role === 'user' ? 'justify-end flex-row-reverse' : 'justify-start'}`}
             >
               {m.role === 'user' ? (
@@ -157,7 +157,7 @@ export default function ChatPage() {
               
               <div className={`max-w-[85%] md:max-w-[70%] p-6 md:p-8 rounded-3xl md:rounded-[2.5rem] border-2 shadow-2xl ${
                 m.role === 'user' 
-                  ? 'bg-gradient-to-br from-[#bc13fe]/40 to-[#00f3ff]/20 border-[#bc13fe]/50 rounded-br-sm text-white backdrop-blur-3xl' 
+                  ? 'bg-gradient-to-br from-[#bc13fe]/40 to-[#00f3ff]/20 border-[#bc13fe]/50 rounded-br-sm text-white backdrop-blur-md' 
                   : 'glass-panel border-white/20 rounded-bl-sm text-white bg-white/5 shadow-[0_0_20px_rgba(255,255,255,0.05)]'
               }`}>
                 <p className="text-base md:text-xl leading-relaxed font-bold">{m.content}</p>
