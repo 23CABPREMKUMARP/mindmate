@@ -1,8 +1,7 @@
 "use client";
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { SmilePlus, Wind, Brain, Target, ArrowLeft, Sparkles } from 'lucide-react';
-import BubblePopGame from '@/components/BubblePopGame';
+import { SmilePlus, Wind, Brain, Target, ArrowLeft } from 'lucide-react';
 
 const cardVariants = {
   hidden: { opacity: 0, scale: 0.9 },
@@ -134,21 +133,6 @@ export default function MoodBoosterPage() {
             </div>
           </motion.div>
 
-          {/* Card 4: Bubble Pop */}
-          <motion.div 
-            variants={cardVariants}
-            onClick={() => setActiveGame('bubble-pop')}
-            className="cursor-pointer group flex flex-col justify-between p-8 glass-panel rounded-3xl shadow-lg hover:-translate-y-2 border border-[#00f3ff]/20 hover:shadow-[0_0_30px_rgba(0,243,255,0.15)] transition-all relative overflow-hidden h-64"
-          >
-            <div className="absolute inset-0 bg-gradient-to-br from-[#bc13fe]/10 to-transparent pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity"></div>
-            <Sparkles className="w-12 h-12 text-[#bc13fe] mb-4 group-hover:scale-110 transition-transform drop-shadow-[0_0_8px_rgba(188,19,254,0.8)]" />
-            <div>
-              <h2 className="text-xl font-bold text-white tracking-wide">Bubble Pop Relax</h2>
-              <p className="mt-2 text-sm text-gray-400 leading-relaxed font-medium">
-                Pop 3D RGB bubbles to release positive affirmations and dopamine hits.
-              </p>
-            </div>
-          </motion.div>
         </motion.div>
       ) : (
         <motion.div 
@@ -165,12 +149,6 @@ export default function MoodBoosterPage() {
              <ArrowLeft size={16} /> Disconnect Protocol
           </button>
           
-          {/* BUBBLE POP GAME */}
-          {activeGame === 'bubble-pop' && (
-            <div className="h-[600px] glass-panel rounded-[40px] border border-[#bc13fe]/30 shadow-[0_0_40px_rgba(188,19,254,0.05)] relative overflow-hidden">
-               <BubblePopGame />
-            </div>
-          )}
 
           {/* BREATHING GAME */}
           {activeGame === 'breathing' && (
