@@ -58,10 +58,32 @@ export default function DashboardPage() {
     } catch (e) {}
   };
 
-  // Process data using memoized utilities
+  const MOCK_DATA = {
+      timeline: [
+          { date: new Date(Date.now() - 6 * 86400000).toISOString(), score: 3 },
+          { date: new Date(Date.now() - 5 * 86400000).toISOString(), score: 4 },
+          { date: new Date(Date.now() - 4 * 86400000).toISOString(), score: 3 },
+          { date: new Date(Date.now() - 3 * 86400000).toISOString(), score: 5 },
+          { date: new Date(Date.now() - 2 * 86400000).toISOString(), score: 4 },
+          { date: new Date(Date.now() - 1 * 86400000).toISOString(), score: 4 },
+          { date: new Date().toISOString(), score: 5 },
+      ],
+      dayOfWeek: [
+          { day: 'Mon', score: 3.5 }, { day: 'Tue', score: 4.0 }, { day: 'Wed', score: 3.2 },
+          { day: 'Thu', score: 4.5 }, { day: 'Fri', score: 4.8 }, { day: 'Sat', score: 4.2 }, { day: 'Sun', score: 3.8 }
+      ],
+      distribution: [
+          { name: 'Happy', value: 45 }, { name: 'Neutral', value: 30 }, { name: 'Sad', value: 15 }, { name: 'Angry', value: 10 }
+      ]
+  };
+
   const analytics = useMemo(() => {
     if (!isLoaded) return null;
-    return aggregateMoodData(journals, emotionLogs);
+    const realData = aggregateMoodData(journals, emotionLogs);
+    // If no real data, use mock so the charts are visible
+    if (!realData.timeline.length && !realData.dayOfWeek.every(d => d.score === 0)) return realData;
+    if (!realData.timeline.length) return MOCK_DATA;
+    return realData;
   }, [isLoaded, journals, emotionLogs]);
 
   const stability = useMemo(() => {
@@ -179,7 +201,7 @@ export default function DashboardPage() {
                 </h2>
                 <div className="text-2xl md:text-4xl font-black text-white">{stability}</div>
             </div>
-            <p className="relative z-10 text-[10px] font-bold text-gray-400 uppercase tracking-widest">VARIANCE PROTOCOL</p>
+            <p className="relative z-10 text-[10px] font-bold text-gray-400 uppercase tracking-widest">MOOD BALANCE</p>
             {/* Aura Line */}
             <div className="absolute bottom-0 left-0 h-[2px] w-0 bg-gradient-to-r from-transparent via-[#00ffcc] to-transparent group-hover:w-full transition-all duration-700 opacity-80"></div>
         </motion.div>
@@ -357,7 +379,7 @@ export default function DashboardPage() {
 
           <motion.div variants={cardVariants} className="glass-panel p-10 rounded-[40px] border border-[#bc13fe]/20 flex flex-col justify-between group">
               <h2 className="text-xl font-bold text-white mb-6 flex items-center gap-3">
-                  <BrainCircuit className="text-[#bc13fe]" /> Neural Optimization Log
+                  <BrainCircuit className="text-[#bc13fe]" /> My Growth Journal
               </h2>
               <div className="p-6 bg-white/5 rounded-3xl border border-white/10 italic text-sm text-gray-300 font-medium leading-relaxed">
                   "Current metrics indicate a {stability > 70 ? 'high' : 'variable'} emotional stability with a {improvementPercent >= 0 ? 'positive' : 'diverging'} trajectory. Recommend maintaining protocol consistency."
