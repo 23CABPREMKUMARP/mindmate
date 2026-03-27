@@ -59,7 +59,7 @@ export default function GeminiChatPage() {
         }
       };
     }
-  }, [isRecording]);
+  }, [isRecording, i18n.language]);
 
   const toggleRecording = () => {
     if (isRecording) {
