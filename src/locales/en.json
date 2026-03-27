@@ -1,54 +1,54 @@
 {
   "nav": {
     "home": "Home",
-    "dashboard": "Dashboard",
-    "chat": "Therapy Chat",
-    "gemini": "Gemini Voice",
-    "emotion": "Emotion Scanner",
-    "journal": "Data Ledger",
-    "mood": "Mood Booster",
-    "settings": "Settings",
-    "logout": "Logout"
+    "dashboard": "My Overview",
+    "chat": "Talk to AI Friend",
+    "gemini": "Voice Assistant",
+    "emotion": "Mood Scanner",
+    "journal": "My Journal",
+    "mood": "Feel Better",
+    "settings": "Preferences",
+    "logout": "Sign Out"
   },
   "auth": {
-    "login_title": "Neural Access",
-    "login_subtitle": "Initialize your mental health uplink",
-    "register_title": "Pulse Creation",
-    "register_subtitle": "Create your new neural profile",
-    "face_login": "Biometric Unlock",
-    "face_register": "Biometric Enrollment",
-    "username": "Neural ID / Username",
-    "password": "Access Key / Password",
-    "btn_login": "Pulse Entry",
-    "btn_register": "Identity Creation",
-    "already_account": "Existing Neural Link?",
-    "no_account": "New Neural Pathway?"
+    "login_title": "Welcome Back! 😊",
+    "login_subtitle": "It's so nice to see you again.",
+    "register_title": "Create My Account",
+    "register_subtitle": "Let's start your journey together.",
+    "face_login": "Face Unlock",
+    "face_register": "Set up Face Unlock",
+    "username": "Your name",
+    "password": "Your password",
+    "btn_login": "Let's Start",
+    "btn_register": "Join the Family",
+    "already_account": "Have an account? Welcome back!",
+    "no_account": "New here? Let's join!"
   },
   "dashboard": {
-    "title": "Analytics Hub",
-    "status": "Diagnostic Status",
-    "streak": "Daily Streak",
-    "avg_mood": "Avg Mood",
-    "journals": "Journals",
-    "checkins": "Check-ins",
-    "trend": "Weekly Emotion Trend",
-    "recommendations": "AI Protocol Recommendations",
-    "rec_breathing": "Box Breathing",
-    "rec_gratitude": "Gratitude Logging",
-    "rec_sleep": "Sleep Hygiene"
+    "title": "My Overview",
+    "status": "How I'm Doing",
+    "streak": "Days Together",
+    "avg_mood": "My Mood Level",
+    "journals": "My Thoughts",
+    "checkins": "My Check-ins",
+    "trend": "My Mood History",
+    "recommendations": "Helpful Tips for You",
+    "rec_breathing": "Relax and Breathe",
+    "rec_gratitude": "Write down what makes you happy",
+    "rec_sleep": "Resting your mind and body"
   },
   "chat": {
-    "title": "Gemini AI Hub",
-    "subtitle": "Empathetic Neural Analysis",
-    "placeholder": "Initialize neural query...",
-    "listening": "Acoustic sensor active...",
-    "speak_btn": "Voice Protocol"
+    "title": "Talk to AI Friend",
+    "subtitle": "I am here to listen and help you.",
+    "placeholder": "Talk to me...",
+    "listening": "I'm listening to you...",
+    "speak_btn": "Talk with Voice"
   },
   "emotions": {
-    "title": "Emotion Scanner",
-    "subtitle": "Real-time biometric analysis",
-    "scanning": "Analyzing neural state...",
-    "detected": "Emotion Detected",
+    "title": "Mood Scanner",
+    "subtitle": "Let's see how you're feeling today.",
+    "scanning": "Looking at your smile...",
+    "detected": "I think you feel...",
     "happy": "Happy",
     "sad": "Sad",
     "angry": "Angry",
@@ -57,29 +57,29 @@
     "surprised": "Surprised"
   },
   "journal": {
-    "title": "Neural Ledger",
-    "subtitle": "Encrypted Thought Repository",
-    "placeholder": "Offload neural and emotive data here...",
-    "btn_save": "Commit to Ledger",
-    "history": "Diagnostic History"
+    "title": "My Journal",
+    "subtitle": "A safe space for all your thoughts.",
+    "placeholder": "How are you feeling today?",
+    "btn_save": "Save My Thoughts",
+    "history": "My Past Thoughts"
   },
   "mood_booster": {
-    "title": "Sensory Refinement",
-    "subtitle": "Cognitive Recalibration Modules",
-    "start": "Initialize session",
-    "game_over": "Session Complete"
+    "title": "Feel Better",
+    "subtitle": "Fun and relaxing games just for you.",
+    "start": "Let's Play",
+    "game_over": "Great job! Hope you feel better."
   },
   "common": {
     "save": "Save",
-    "cancel": "Cancel",
-    "success": "Operation Successful",
-    "error": "Neural Link Unstable",
-    "loading": "Synchronizing...",
-    "back": "Connect Hub",
+    "cancel": "Go Back",
+    "success": "Everything is great! 😊",
+    "error": "Something went wrong, try again.",
+    "loading": "Just a moment...",
+    "back": "Go Back",
     "home": "Home",
-    "chat": "Therapy Chat",
-    "journal": "Data Ledger",
-    "emotion_detector": "Emotion Scanner",
-    "mood_booster": "Mood Booster"
+    "chat": "Talk to AI Friend",
+    "journal": "My Journal",
+    "emotion_detector": "Mood Scanner",
+    "mood_booster": "Feel Better"
   }
 }

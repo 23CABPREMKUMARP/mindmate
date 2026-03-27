@@ -107,7 +107,7 @@ export default function LoginPage() {
                     <ShieldCheck className="text-white w-8 h-8 relative z-10" />
                 </div>
                 <h1 className="text-3xl font-black tracking-tighter text-white uppercase italic drop-shadow-[0_0_10px_rgba(255,255,255,0.3)]">
-                    MINDMATE <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#00f3ff] to-blue-400 not-italic drop-shadow-[0_0_5px_#00f3ff]">SECURE</span>
+                    WELCOME <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#00f3ff] to-blue-400 not-italic drop-shadow-[0_0_5px_#00f3ff]">BACK!</span>
                 </h1>
             </div>
 
@@ -186,7 +186,7 @@ export default function LoginPage() {
                          ? 'bg-[#00f3ff]/20 text-[#00f3ff] border-[#00f3ff]/50 shadow-[0_0_10px_#00f3ff]' 
                          : 'bg-black/80 text-white/40 border-white/10'
                    }`}>
-                     {faceLocked ? '✓ BIOMETRIC LOCK' : descriptor ? '⟳ INITIALIZING...' : '⬤ AWAITING INPUT...'}
+                     {faceLocked ? '✓ YOU ARE FOUND!' : descriptor ? '⟳ SAYING HELLO...' : '⬤ LOOK AT ME...'}
                    </div>
                 </div>
 
@@ -202,7 +202,7 @@ export default function LoginPage() {
                             >
                                 <div className="text-center">
                                     <h3 className="text-xl font-bold text-white tracking-widest uppercase">{t('auth.face_login')}</h3>
-                                    <p className="text-[10px] text-gray-400 font-bold tracking-widest uppercase mt-1">ALIGN FACE WITH SENSOR</p>
+                                    <p className="text-[10px] text-gray-400 font-bold tracking-widest uppercase mt-1">SMILE FOR ME!</p>
                                 </div>
                                 <motion.button
                                     whileHover={faceLocked ? { scale: 1.02, boxShadow: "0 0 30px rgba(0,243,255,0.4)" } : {}}
@@ -237,7 +237,7 @@ export default function LoginPage() {
                             >
                                 <div className="text-center">
                                     <h3 className="text-xl font-bold text-white tracking-widest uppercase">{t('auth.register_title')}</h3>
-                                    <p className="text-[10px] text-gray-400 font-bold tracking-widest uppercase mt-1">ENROLL BIOMETRIC SIGNATURE</p>
+                                    <p className="text-[10px] text-gray-400 font-bold tracking-widest uppercase mt-1">LET'S MEET YOU</p>
                                 </div>
                                 <div className="relative group">
                                     <User className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-500 group-focus-within:text-[#bc13fe] transition-colors" size={18} />
@@ -264,7 +264,7 @@ export default function LoginPage() {
                                         <UserPlus size={18} /> {t('auth.btn_register')}
                                       </>
                                     ) : (
-                                      'AWAITING REQUISITES...'
+                                      'ALMOST THERE!...'
                                     )}
                                 </motion.button>
                                 <p className="text-center text-xs text-gray-500 font-bold uppercase tracking-widest mt-4">
