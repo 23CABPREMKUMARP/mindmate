@@ -60,4 +60,3 @@ HUGGINGFACE_API_KEY=your_hugging_face_key
 5. Hit **Deploy**. 
 
 Congratulations! Your AI Mental Health assistant is up and fully operational.
-# mindmate

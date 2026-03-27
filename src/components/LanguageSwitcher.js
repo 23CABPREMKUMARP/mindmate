@@ -72,7 +72,7 @@ export default function LanguageSwitcher() {
                   key={lang.code}
                   onClick={() => changeLanguage(lang.code)}
                   className={`w-full flex items-center justify-between px-4 py-4 rounded-xl transition-all ${
-                    i18n.language === lang.code 
+                    activeLangCode === lang.code 
                       ? 'bg-[#00f3ff]/10 text-[#00f3ff] border border-[#00f3ff]/30 shadow-[0_0_15px_rgba(0,243,255,0.1)]' 
                       : 'text-white/60 hover:bg-white/5 hover:text-white border border-transparent'
                   }`}
@@ -81,7 +81,7 @@ export default function LanguageSwitcher() {
                     <span className="text-[11px] font-black uppercase tracking-[0.1em]">{lang.native}</span>
                     <span className="text-[10px] opacity-40 font-bold tracking-tight">{lang.name}</span>
                   </div>
-                  {i18n.language === lang.code && (
+                  {activeLangCode === lang.code && (
                     <motion.div initial={{ scale: 0 }} animate={{ scale: 1 }} className="p-1 rounded-full bg-[#00f3ff]/20">
                       <Check size={14} className="text-[#00f3ff]" />
                     </motion.div>

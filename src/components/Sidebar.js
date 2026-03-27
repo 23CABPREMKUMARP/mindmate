@@ -106,7 +106,7 @@ export default function Sidebar() {
         </div>
 
         {/* Bottom Profile / Settings Area */}
-        <div className="p-4 mt-auto border-t border-white/10 space-y-4 relative overflow-hidden">
+        <div className="p-4 mt-auto border-t border-white/10 space-y-4 relative overflow-visible">
            <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-[#bc13fe]/10 via-transparent to-transparent h-48 pointer-events-none"></div>
            
            <LanguageSwitcher />
