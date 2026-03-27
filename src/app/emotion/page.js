@@ -5,6 +5,7 @@ import { ScanFace, Activity, CheckCircle2, AlertTriangle, Save } from 'lucide-re
 import WebcamEmotion from '@/components/WebcamEmotion';
 import SuggestionsPanel from '@/components/SuggestionsPanel';
 import MoodVisualizer from '@/components/MoodVisualizer';
+import Mood3DOrb from '@/components/Mood3DOrb';
 import { useTranslation } from 'react-i18next';
 
 export default function EmotionPage() {
@@ -111,7 +112,14 @@ export default function EmotionPage() {
             {currentEmotion ? (
               <div className="space-y-6 relative z-10">
                 <div className="text-center p-4 md:p-6 bg-white/5 rounded-2xl border border-white/10">
-                  <p className="text-[10px] font-bold text-gray-400 uppercase tracking-widest mb-2">{t('emotions.detected')}</p>
+                  <p className="text-[10px] font-bold text-gray-400 uppercase tracking-widest mb-6">{t('emotions.detected')}</p>
+                  
+                  {/* 3D Energy Visualizer */}
+                  <div className="h-48 mb-6 relative overflow-hidden rounded-2xl bg-black/40 border border-white/5 shadow-inner">
+                      <div className="absolute inset-0 bg-gradient-radial from-white/5 to-transparent pointer-events-none"></div>
+                      <Mood3DOrb mood={currentEmotion.type} />
+                  </div>
+
                   <p className="text-3xl md:text-4xl font-black capitalize text-white drop-shadow-[0_0_15px_rgba(255,255,255,0.3)]">
                     {currentEmotion.type === 'happy' ? `😊 ${t('emotions.happy')}` :
                      currentEmotion.type === 'sad' ? `😢 ${t('emotions.sad')}` :
