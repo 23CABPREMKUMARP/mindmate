@@ -1,0 +1,10 @@
+{
+  "nav": { "home": "ഹോം", "dashboard": "ഡാഷ്‌ബോർഡ്", "chat": "ചാറ്റ്", "gemini": "ജെമിനി വോയിസ്", "emotion": "വികാരങ്ങൾ", "journal": "ഡയറി", "mood": "മൂഡ് ബൂസ്റ്റർ", "settings": "ക്രമീകരണങ്ങൾ", "logout": "പുറത്തുകടക്കുക" },
+  "auth": { "login_title": "ലോഗിൻ", "login_subtitle": "മാനംസികാരോഗ്യം മെച്ചപ്പെടുത്തുക", "register_title": "രജിസ്ട്രേഷൻ", "register_subtitle": "പുതിയ പ്രൊഫൈൽ", "face_login": "ഫേസ് അൺലോക്ക്", "face_register": "ഫേസ് രജിസ്ട്രേഷൻ", "username": "യൂസർ നെയിം", "password": "പാസ്‌വേഡ്", "btn_login": "ലോഗിൻ", "btn_register": "രജിസ്റ്റർ", "already_account": "അക്കൗണ്ട് ഉണ്ടോ?", "no_account": "അക്കൗണ്ട് ഇല്ലേ?" },
+  "dashboard": { "title": "അനലിറ്റിക്സ് ഹബ്", "status": "നിലവിലെ സ്ഥിതി", "streak": "ദൈനംദിന സ്ട്രീക്ക്", "avg_mood": "ശരാശരി മൂഡ്", "journals": "ഡയറികൾ", "checkins": "ചെക്ക്-ഇന്നുകൾ", "trend": "പ്രതിവാര വൈകാരിക പ്രവണത", "recommendations": "AI ശുപാർശകൾ", "rec_breathing": "ബോക്സ് ബ്രീത്തിംഗ്", "rec_gratitude": "കൃതജ്ഞത രേഖപ്പെടുത്തൽ", "rec_sleep": "ഉറക്ക ശുചിത്വം" },
+  "chat": { "title": "ജെമിനി AI ഹബ്", "subtitle": "വികാരങ്ങളുടെ വിശകലനം", "placeholder": "ചോദിച്ചു തുടങ്ങാം...", "listening": "ശ്രദ്ധിക്കുന്നു...", "speak_btn": "വോയിസ് ചാറ്റ്" },
+  "emotions": { "title": "വികാരങ്ങൾ", "subtitle": "ബയോമെട്രിക് വിശ്കലനം", "scanning": "വിശകലനം ചെയ്യുന്നു...", "detected": "കണ്ടെത്തി", "happy": "സന്തോഷം", "sad": "വിഷമം", "angry": "ദേഷ്യം", "fear": "പേടി", "neutral": "സാധാരണം", "surprised": "അത്ഭുതം" },
+  "journal": { "title": "ഡയറി ഏടുകൾ", "subtitle": "ചിന്തകളുടെ കലവറ", "placeholder": "കൂടുതൽ എഴുതാം...", "btn_save": "സേവ് ചെയ്യുക", "history": "പഴയ വിവരങ്ങൾ" },
+  "mood_booster": { "title": "മനസ്സ് ഒരുക്കാൻ", "subtitle": "റിഫ്രഷ് ചെയ്യൂ", "start": "തുടങ്ങാം", "game_over": "പൂർത്തിയായി" },
+  "common": { "save": "സേവ്", "cancel": "റദ്ദാക്കുക", "success": "പൂർത്തിയായി", "error": "തകരാർ", "loading": "ലോഡ് ചെയ്യുന്നു..." }
+}

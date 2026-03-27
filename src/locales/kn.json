@@ -1,0 +1,10 @@
+{
+  "nav": { "home": "ಹೋಮ್", "dashboard": "ಡ್ಯಾಶ್‌ಬೋರ್ಡ್", "chat": "ಥೆರಪಿ ಚಾಟ್", "gemini": "ಜೆಮಿನಿ ವಾಯ್ಸ್", "emotion": "ಎಮೋಷನ್ ಸ್ಕ್ಯಾನರ್", "journal": "ಡೇಟಾ ಲೆಡ್ಜರ್", "mood": "ಮೂಡ್ ಬೂಸ್ಟರ್", "settings": "ಸೆಟ್ಟಿಂಗ್ಸ್", "logout": "ಲಾಗೌಟ್" },
+  "auth": { "login_title": "ನ್ಯೂರಲ್ ಪ್ರವೇಶ", "login_subtitle": "ನಿಮ್ಮ ಮಾನಸಿಕ ಆರೋಗ್ಯ ಸಂಪರ್ಕವನ್ನು ಪ್ರಾರಂಭಿಸಿ", "register_title": "ಪ್ರೊಫೈಲ್ ರಚನೆ", "register_subtitle": "ಹೊಸ ನ್ಯೂರಲ್ ಪ್ರೊಫೈಲ್ ರಚಿಸಿ", "face_login": "ಬಯೋಮೆಟ್ರಿಕ್ ಅನ್‌ಲಾಕ್", "face_register": "ಬಯೋಮೆಟ್ರಿಕ್ ನೋಂದಣಿ", "username": "ಬಳಕೆದಾರರ ಹೆಸರು", "password": "ಪಾಸ್‌ವರ್ಡ್", "btn_login": "ಲಾಗಿನ್", "btn_register": "ಖಾತೆ ರಚಿಸಿ", "already_account": "ಖಾತೆ ಈಗಾಗಲೇ ಇದೆಯೇ?", "no_account": "ಹೊಸ ಖಾತೆ ಬೇಕೆ?" },
+  "dashboard": { "title": "ಅನಾಲಿಟಿಕ್ಸ್ ಹಬ್", "status": "ಪರಿಶೀಲನೆಯ ಸ್ಥಿತಿ", "streak": "ಡೈಲಿ ಸ್ಟ್ರೀಕ್", "avg_mood": "ಸರಾಸರಿ ಮೂಡ್", "journals": "ಜರ್ನಲ್ಸ್", "checkins": "ಚೆಕ್-ಇನ್ಸ್", "trend": "ವಾರದ ಭಾವನೆ ಪ್ರವೃತ್ತಿ", "recommendations": "AI ಶಿಫಾರಸುಗಳು", "rec_breathing": "ಬಾಕ್ಸ್ ಬ್ರೀತಿಂಗ್", "rec_gratitude": "ಕೃತಜ್ಞತಾ ಲಾಗಿಂಗ್", "rec_sleep": "ನಿದ್ರೆಯ ನೈರ್ಮಲ್ಯ" },
+  "chat": { "title": "ಜೆಮಿನಿ AI ಹಬ್", "subtitle": "ನ್ಯೂರಲ್ ವಿಶ್ಲೇಷಣೆ", "placeholder": "ಪ್ರಶ್ನಿಸಿ...", "listening": "ಕೇಳಿಸಿಕೊಳ್ಳುತ್ತಿದ್ದೇನೆ...", "speak_btn": "ವಾಯ್ಸ್ ಚಾಟ್" },
+  "emotions": { "title": "ಎಮೋಷನ್ ಸ್ಕ್ಯಾನರ್", "subtitle": "ಬಯೋಮೆಟ್ರಿಕ್ ವಿಶ್ಲೇಷಣೆ", "scanning": "ವಿಶ್ಲೇಷಿಸಲಾಗುತ್ತಿದೆ...", "detected": "ಭಾವನೆ ಪತ್ತೆಯಾಗಿದೆ", "happy": "ಸಂತೋಷ", "sad": "ದುಃಖ", "angry": "ಕೋಪ", "fear": "ಭಯ", "neutral": "ಸಾಮಾನ್ಯ", "surprised": "ಆಶ್ಚರ್ಯ" },
+  "journal": { "title": "ಡೇಟಾ ಲೆಡ್ಜರ್", "subtitle": "ಆಲೋಚನೆಗಳ ಸಂಗ್ರಹ", "placeholder": "ನಿಮ್ಮ ಆಲೋಚನೆಗಳನ್ನು ಇಲ್ಲಿ ಬರೆಯಿರಿ...", "btn_save": "ಸೇವ್ ಮಾಡಿ", "history": "ಹಳೆಯ ದಾಖಲೆಗಳು" },
+  "mood_booster": { "title": "ಸೆನ್ಸರಿ ರಿಫೈನ್‌ಮೆಂಟ್", "subtitle": "ಕಾಗ್ನಿಟಿವ್ ರಿಕಾಲಿಬ್ರೇಶನ್", "start": "ಪ್ರಾರಂಭಿಸಿ", "game_over": "ಮುಕ್ತಾಯವಾಯಿತು" },
+  "common": { "save": "ಸೇವ್", "cancel": "ರದ್ದು", "success": "ಯಶಸ್ವಿ", "error": "ಸಂಪರ್ಕ ವಿಫಲ", "loading": "ಲೋಡ್ ಆಗುತ್ತಿದೆ..." }
+}

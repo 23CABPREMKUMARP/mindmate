@@ -1,0 +1,10 @@
+{
+  "nav": { "home": "होम", "dashboard": "डैशबोर्ड", "chat": "थेरेपी चैट", "gemini": "जेमिनी वॉयस", "emotion": "इमोशन स्कैनर", "journal": "जर्नल", "mood": "मूड बूस्टर", "settings": "सेटिंग्स", "logout": "लॉगआउट" },
+  "auth": { "login_title": "न्यूरल एक्सेस", "login_subtitle": "मेंटल हेल्थ अपलिंक शुरू करें", "register_title": "न्यूरल प्रोफाइल निर्माण", "register_subtitle": "अपना नया प्रोफाइल बनाएं", "face_login": "बायोमेट्रिक अनलॉक", "face_register": "बायोमेट्रिक एनरोलमेंट", "username": "यूजर आईडी", "password": "पासवर्ड", "btn_login": "लॉगइन", "btn_register": "अकाउंट बनाएं", "already_account": "क्या पहले से अकाउंट है?", "no_account": "नया अकाउंट चाहिए?" },
+  "dashboard": { "title": "एनालिटिक्स हब", "status": "जांच स्थिति", "streak": "डेली स्ट्रीक", "avg_mood": "औसत मूड", "journals": "जर्नल", "checkins": "चेक-इन्स", "trend": "मूड ट्रेंड", "recommendations": "AI सुझाव", "rec_breathing": "बॉक्स ब्रीदिंग", "rec_gratitude": "कृतज्ञता लॉगिंग", "rec_sleep": "नींद की स्वच्छता" },
+  "chat": { "title": "जेमिनी AI हब", "subtitle": "न्यूरल विश्लेषण", "placeholder": "पूछें...", "listening": "सुन रहा है...", "speak_btn": "वॉयस चैट" },
+  "emotions": { "title": "इमोशन स्कैनर", "subtitle": "बायोमेट्रिक विश्लेषण", "scanning": "विश्लेषण कर रहा है...", "detected": "भावना मिली", "happy": "खुश", "sad": "दुखी", "angry": "गुस्सा", "fear": "डर", "neutral": "सामान्य", "surprised": "हैरान" },
+  "journal": { "title": "मेंटल लेजर", "subtitle": "विचारों का संग्रह", "placeholder": "अपने विचार यहाँ साझा करें...", "btn_save": "जर्नल में सहेजें", "history": "पुराने रिकॉर्ड" },
+  "mood_booster": { "title": "सेंसरी रिफाइनमेंट", "subtitle": "कॉग्निटिव रिकैलिब्रेशन", "start": "शुरू करें", "game_over": "सत्र समाप्त" },
+  "common": { "save": "सहेजें", "cancel": "रद्द करें", "success": "सफल", "error": "संपर्क विफलता", "loading": "लोड हो रहा है..." }
+}

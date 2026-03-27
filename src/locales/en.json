@@ -1,0 +1,85 @@
+{
+  "nav": {
+    "home": "Home",
+    "dashboard": "Dashboard",
+    "chat": "Therapy Chat",
+    "gemini": "Gemini Voice",
+    "emotion": "Emotion Scanner",
+    "journal": "Data Ledger",
+    "mood": "Mood Booster",
+    "settings": "Settings",
+    "logout": "Logout"
+  },
+  "auth": {
+    "login_title": "Neural Access",
+    "login_subtitle": "Initialize your mental health uplink",
+    "register_title": "Pulse Creation",
+    "register_subtitle": "Create your new neural profile",
+    "face_login": "Biometric Unlock",
+    "face_register": "Biometric Enrollment",
+    "username": "Neural ID / Username",
+    "password": "Access Key / Password",
+    "btn_login": "Pulse Entry",
+    "btn_register": "Identity Creation",
+    "already_account": "Existing Neural Link?",
+    "no_account": "New Neural Pathway?"
+  },
+  "dashboard": {
+    "title": "Analytics Hub",
+    "status": "Diagnostic Status",
+    "streak": "Daily Streak",
+    "avg_mood": "Avg Mood",
+    "journals": "Journals",
+    "checkins": "Check-ins",
+    "trend": "Weekly Emotion Trend",
+    "recommendations": "AI Protocol Recommendations",
+    "rec_breathing": "Box Breathing",
+    "rec_gratitude": "Gratitude Logging",
+    "rec_sleep": "Sleep Hygiene"
+  },
+  "chat": {
+    "title": "Gemini AI Hub",
+    "subtitle": "Empathetic Neural Analysis",
+    "placeholder": "Initialize neural query...",
+    "listening": "Acoustic sensor active...",
+    "speak_btn": "Voice Protocol"
+  },
+  "emotions": {
+    "title": "Emotion Scanner",
+    "subtitle": "Real-time biometric analysis",
+    "scanning": "Analyzing neural state...",
+    "detected": "Emotion Detected",
+    "happy": "Happy",
+    "sad": "Sad",
+    "angry": "Angry",
+    "fear": "Fear",
+    "neutral": "Neutral",
+    "surprised": "Surprised"
+  },
+  "journal": {
+    "title": "Neural Ledger",
+    "subtitle": "Encrypted Thought Repository",
+    "placeholder": "Offload neural and emotive data here...",
+    "btn_save": "Commit to Ledger",
+    "history": "Diagnostic History"
+  },
+  "mood_booster": {
+    "title": "Sensory Refinement",
+    "subtitle": "Cognitive Recalibration Modules",
+    "start": "Initialize session",
+    "game_over": "Session Complete"
+  },
+  "common": {
+    "save": "Save",
+    "cancel": "Cancel",
+    "success": "Operation Successful",
+    "error": "Neural Link Unstable",
+    "loading": "Synchronizing...",
+    "back": "Connect Hub",
+    "home": "Home",
+    "chat": "Therapy Chat",
+    "journal": "Data Ledger",
+    "emotion_detector": "Emotion Scanner",
+    "mood_booster": "Mood Booster"
+  }
+}
